@@ -1,0 +1,19 @@
+<h2 class="text-center">{{ question.question_text }}</h2>
+    <p class="text-center">{{ choice.choice_text }}</p>
+    <p class="text-center">{{ choice2.choice_text }}</p>
+    <p class="text-center">{{ choice3.choice_text }}</p>
+<form ng-submit="questionSubmit()"> 
+    <div class="form-group">
+        <label for="question">Question</label>
+        <input type="text" class="form-control" id="question" placeholder="Question" ng-model="question.question_text"
+               required>
+        <input type="text" class="form-control" id="choice1" placeholder="Choice 1" ng-model="choice.choice_text"
+           required>
+        <input type="text" class="form-control" id="choice2" placeholder="Choice 2" ng-model="choice2.choice_text"
+           required>
+        <input type="text" class="form-control" id="choice3" placeholder="Choice 3" ng-model="choice3.choice_text"
+           required>
+
+        <button class="btn btn-info" id="login-submit">Submit</button>
+    </div>
+</form>
